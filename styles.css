@@ -1,0 +1,111 @@
+body {
+    background-image: url(lines.png);
+    background-blend-mode: multiply;
+    background-color: rgb(254 208 92);
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#wrapper {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    font-size: 24px;
+    margin: 40px;
+    padding: 40px;
+    max-width: 900px;
+    outline: solid 2px rgb(214, 182, 0);
+    border-bottom: solid 6px rgb(214, 182, 0);
+    border-right: solid 4px rgb(214, 182, 0);
+    border-radius: 16px;
+}
+
+#col-1, #col-2 {
+    width: calc(50% - 20px);
+    float: left;
+    margin-right: 20px
+}
+
+#logo {
+    height: 25vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+ul, li {
+    padding: 3px;
+    list-style: none;
+}
+
+a {
+    color: rgb(202, 64, 0);
+    text-decoration: none;
+}
+
+.button {
+    font-size: 17px;
+    padding: 5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    min-width: 30px;
+    border-radius: 6px;
+    text-align: center;
+    display: block;
+    background-color: rgb(255, 81, 0);
+    outline: solid 1px rgb(182, 58, 0);
+    border-bottom: solid 4px rgb(182, 58, 0);
+    border-right: solid 2.5px rgb(182, 58, 0);
+    color: white;
+}
+
+.button img {
+    margin-right: 8px;
+    margin-bottom: -2px;
+}
+.button:hover {
+    background-color: rgb(255, 81, 0);
+    color: white;
+    outline: solid 1px rgb(182, 58, 0);
+    border-bottom: solid 3px rgb(182, 58, 0);
+    border-right: solid 2px rgb(182, 58, 0);
+    margin-top: 1px;
+}
+.button:active {
+    background-color: rgb(255, 81, 0);
+    color: white;
+    outline: solid 1px rgb(182, 58, 0);
+    border-bottom: solid 1px rgb(182, 58, 0);
+    border-right: solid 1px rgb(182, 58, 0);
+    margin-top: 3px;
+}
+
+
+a:hover {
+    color: rgb(255, 81, 0)
+}
+
+@media screen and (max-width: 600px) {
+    #col-1, #col-2 {
+        width: 100%;
+        text-align: center;
+    }
+    #logo {
+        max-height:25vh;
+        text-align: center;
+
+    }
+}
