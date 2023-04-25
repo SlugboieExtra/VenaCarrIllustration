@@ -21,14 +21,20 @@ h1 {
     font-size: 24px;
     margin: 40px;
     padding: 40px;
-    max-width: 900px;
+    max-width: 600px;
     outline: solid 2px rgb(214, 182, 0);
     border-bottom: solid 6px rgb(214, 182, 0);
     border-right: solid 4px rgb(214, 182, 0);
     border-radius: 16px;
 }
 
-#col-1, #col-2 {
+.full {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.col-1, .col-2 {
     width: calc(50% - 20px);
     float: left;
     margin-right: 20px
